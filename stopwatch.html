@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.stopwatch-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.buttons button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+#reset {
+    background-color: #dc3545;
+}
+
+#reset:hover {
+    background-color: #c82333;
+}
+
+#lap {
+    background-color: #28a745;
+}
+
+#lap:hover {
+    background-color: #218838;
+}
+
+.laps {
+    margin-top: 20px;
+}
+
+.laps h2 {
+    margin-bottom: 10px;
+}
+
+.laps ul {
+    list-style: none;
+    padding: 0;
+}
+
+.laps ul li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+</style>
+</head>
+<body>
+    <div class="stopwatch-container">
+        <h1>Stopwatch</h1>
+        <div id="display">00:00:00</div>
+        <div class="buttons">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+            <button id="lap">Lap</button>
+        </div>
+        <div class="laps">
+            <h2>Lap Times</h2>
+            <ul id="lap-times"></ul>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
